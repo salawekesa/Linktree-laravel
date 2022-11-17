@@ -13,15 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/layout/welcome', [HomeController::class,'welcome']);
+
+// Route::get('/layout/about', [HomeController::class,'about']);
+
+// Route::get('/layout/about', [HomeController::class,'about']);
+
+Route::get('/', function(){
+    return view('main');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/about', function(){
+    return view('layout.about');
 });
 
-Route::get('/contacts', function () {
-    return view('contacts');
+Route::get('/welcome', function(){
+    return view('layout.welcome');
 });
 
+Route::get('/contacts', function(){
+    return view('layout.contacts');
+});
