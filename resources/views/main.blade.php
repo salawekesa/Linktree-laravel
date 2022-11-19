@@ -8,15 +8,20 @@
     @vite('resources/css/app.css')
     <title>Linktree</title>
 </head>
-<body class="bg-gray-100">
+<body class="bg-blue-100">
     <header>
         <ul class="p-6 flex justify-center gap-20 bg-black text-white ">
             <li><a href="{{ 'welcome' }}">Home</a></li>
             <li><a href="{{ 'about' }}">About</a></li>
             <li><a href="{{ 'contacts' }}">Contacts</a></li>
-
         </ul>
     </header>
+    <ul class="p-3 flex justify-center align-middle bg-purple-300 gap-5 text-xl ">
+        <li><a href="">Login</a></li>
+        <li><a href="">Sign up</a></li>
+        <li><a href="">Log out</a></li>
+
+    </ul>
 
     @yield('content')
 </body>

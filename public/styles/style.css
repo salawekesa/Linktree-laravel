@@ -7,3 +7,9 @@ body{
     background-color: black;
     color: aliceblue;
 }
+
+p{
+    color: red;
+    width: 50%;
+
+}
